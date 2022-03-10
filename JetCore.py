@@ -25,3 +25,10 @@ def thread(target, count):
     for i in range(int(count)):
         th = threading.Thread(target=target)
         th.start()
+
+
+def get_ip():
+    import requests
+    ip = requests.get('https://api.ipify.org').content.decode('utf8')
+    print('External IP address is: {}'.format(ip))
+

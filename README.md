@@ -10,7 +10,7 @@ Features
 =
 1) Fast threading
 2) Easy site available check
-3) Eazy ping check
+3) Easy ping check
 
 
 How to install?
