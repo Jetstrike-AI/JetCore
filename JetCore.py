@@ -1,5 +1,5 @@
 # programming core with many features and utilities
-# alpha-0.0.1v
+# alpha-0.0.3v
 
 
 def check_site(site):
@@ -31,4 +31,26 @@ def get_ip():
     import requests
     ip = requests.get('https://api.ipify.org').content.decode('utf8')
     print('External IP address is: {}'.format(ip))
+
+
+def str_byte(text):
+    res = str.encode(text, encoding="utf-8")
+    return res
+
+
+def byte_str(text):
+    res = bytes.decode(text, encoding="utf-8")
+    return res
+
+
+def platform():
+    import platform
+    name = platform.system()
+    return name
+
+
+def processor():
+    import platform
+    proc = platform.processor()
+    return proc
 
