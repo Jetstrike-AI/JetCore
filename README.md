@@ -11,6 +11,7 @@ Features
 1) Fast threading
 2) Easy site available check
 3) Easy ping check
+4) Easy External IP check
 
 
 How to install?
