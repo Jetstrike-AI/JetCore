@@ -77,3 +77,21 @@ def machine_info():
     print("Processor: " + proc)
     print("Architecture: " + str(arc))
     print("Python version: " + py_version)
+
+
+def check_ip(ip):
+    import requests
+    import json
+    r = requests.get("http://ipwhois.app/json/" + ip).text
+    ip = json.loads(r)
+    resource = {ip["ip"],
+                ip["success"],
+                ip["type"],
+                ip["country"],
+                ip["continent"],
+                ip["country_code"],
+                ip["region"],
+                ip["city"],
+                ip["org"]}
+    return resource
+
