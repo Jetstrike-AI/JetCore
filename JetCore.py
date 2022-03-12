@@ -1,5 +1,5 @@
 # programming core with many features and utilities
-# alpha-0.0.3v
+# alpha-0.0.4v
 
 
 def check_site(site):
@@ -30,7 +30,7 @@ def thread(target, count):
 def get_ip():
     import requests
     ip = requests.get('https://api.ipify.org').content.decode('utf8')
-    print('External IP address is: {}'.format(ip))
+    print('External IP is: {}'.format(ip))
 
 
 def str_byte(text):
@@ -54,3 +54,26 @@ def processor():
     proc = platform.processor()
     return proc
 
+
+def arch():
+    import platform
+    arc = platform.architecture()
+    return arc
+
+
+def py_ver():
+    import platform
+    py_version = platform.python_version()
+    return py_version
+
+
+def machine_info():
+    import platform
+    proc = platform.processor()
+    OS = platform.system()
+    arc = platform.architecture()
+    py_version = platform.python_version()
+    print("OS Name: " + OS)
+    print("Processor: " + proc)
+    print("Architecture: " + str(arc))
+    print("Python version: " + py_version)
