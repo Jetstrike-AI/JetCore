@@ -58,7 +58,23 @@ Features
     JetCore.processor()
     #JetCore.processor - returning name of processor in machine
 
+-Find out architecture:
 
+    import JetCore
+    JetCore.arch()
+    #JetCore.arch - returning architecture of processor
+
+-Find out installed python version:
+
+    import JetCore
+    JetCore.py_ver()
+    #JetCore.py_ver - returning version of installed python
+
+-Find out info of your machine:
+
+    import JetCore
+    JetCore.machine_info()
+    #JetCore.machine_info - returning info of machine: arch, system name, processor, version of installed python
 
 How to install?
 =
