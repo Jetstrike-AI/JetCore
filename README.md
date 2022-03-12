@@ -76,6 +76,12 @@ Features
     JetCore.machine_info()
     #JetCore.machine_info - returning info of machine: arch, system name, processor, version of installed python
 
+-Check external IP:
+
+    import JetCore
+    JetCore.check_ip(ip): #ip - IP adress nedeed to check
+    #JetCore.check_ip() - Finding info for external IP
+
 How to install?
 =
 1) git clone https://github.com/Jetstrike-AI/JetCore
