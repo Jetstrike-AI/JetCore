@@ -1,5 +1,5 @@
 # programming core with many features and utilities
-# alpha-0.0.4v
+# alpha-0.0.6v
 
 
 def check_site(site):
@@ -92,6 +92,22 @@ def check_ip(ip):
                 ip["country_code"],
                 ip["region"],
                 ip["city"],
-                ip["org"]}
+                ip["org"],
+                ip["city"],
+                ip["latitude"],
+                ip["longitude"]}
     return resource
 
+
+def check_server(ip, port):
+    import socket
+    s = socket.socket()
+    address = ip
+    port = int(port)
+    try:
+        s.connect((address, port))
+    except Exception as e:
+        print("Something's wrong with %s:%d. Exception is %s" % (address, port, e))
+    finally:
+        print("Server is available")
+        s.close()
