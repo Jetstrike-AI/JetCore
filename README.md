@@ -79,8 +79,14 @@ This core easy to use and takes up almost no space.
 -⚙️Check external IP:
 
     import JetCore
-    JetCore.check_ip(ip): #ip - IP adress nedeed to check
+    JetCore.check_ip(ip) #ip - IP adress nedeed to check
     #JetCore.check_ip() - Finding info for external IP
+
+-⚙️Check available server:
+    
+    import jetCore
+    JetCore.check_server(ip,port) #ip - IP your server; port - port of your server
+    #JetCore.check_server - Trying connect to server.
 
 🛠️How to install?
 =
